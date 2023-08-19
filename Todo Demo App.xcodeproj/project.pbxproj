@@ -16,6 +16,8 @@
 		AAEE6CDF2A9059C0000DEEBA /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CDE2A9059C0000DEEBA /* ToDo.swift */; };
 		AAEE6CE52A905D27000DEEBA /* ToDoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CE42A905D27000DEEBA /* ToDoManager.swift */; };
 		AAEE6CE72A90677D000DEEBA /* ToDo+Sample.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CE62A90677D000DEEBA /* ToDo+Sample.swift */; };
+		AAEE6CE92A907080000DEEBA /* MainTodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CE82A907080000DEEBA /* MainTodoListView.swift */; };
+		AAEE6CEB2A90708F000DEEBA /* HowManyMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CEA2A90708F000DEEBA /* HowManyMoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		AAEE6CDE2A9059C0000DEEBA /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		AAEE6CE42A905D27000DEEBA /* ToDoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoManager.swift; sourceTree = "<group>"; };
 		AAEE6CE62A90677D000DEEBA /* ToDo+Sample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ToDo+Sample.swift"; sourceTree = "<group>"; };
+		AAEE6CE82A907080000DEEBA /* MainTodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTodoListView.swift; sourceTree = "<group>"; };
+		AAEE6CEA2A90708F000DEEBA /* HowManyMoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowManyMoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +82,8 @@
 		AAEE6CA22A9058AA000DEEBA = {
 			isa = PBXGroup;
 			children = (
-				AAEE6CE02A9059F0000DEEBA /* Model and ViewModel */,
 				AAEE6CE12A905A15000DEEBA /* Views */,
+				AAEE6CE02A9059F0000DEEBA /* Model and ViewModel */,
 				AAEE6CAD2A9058AA000DEEBA /* Todo Demo App */,
 				AAEE6CAC2A9058AA000DEEBA /* Products */,
 			);
@@ -128,6 +132,8 @@
 			children = (
 				AAEE6CD82A905969000DEEBA /* AddToDoView.swift */,
 				AAEE6CB02A9058AA000DEEBA /* ContentView.swift */,
+				AAEE6CE82A907080000DEEBA /* MainTodoListView.swift */,
+				AAEE6CEA2A90708F000DEEBA /* HowManyMoreView.swift */,
 				AAEE6CDC2A9059A4000DEEBA /* ToDoDetailView.swift */,
 			);
 			path = Views;
@@ -265,7 +271,9 @@
 			files = (
 				AAEE6CB12A9058AA000DEEBA /* ContentView.swift in Sources */,
 				AAEE6CE52A905D27000DEEBA /* ToDoManager.swift in Sources */,
+				AAEE6CEB2A90708F000DEEBA /* HowManyMoreView.swift in Sources */,
 				AAEE6CDF2A9059C0000DEEBA /* ToDo.swift in Sources */,
+				AAEE6CE92A907080000DEEBA /* MainTodoListView.swift in Sources */,
 				AAEE6CAF2A9058AA000DEEBA /* Todo_Demo_AppApp.swift in Sources */,
 				AAEE6CD92A905969000DEEBA /* AddToDoView.swift in Sources */,
 				AAEE6CE72A90677D000DEEBA /* ToDo+Sample.swift in Sources */,
