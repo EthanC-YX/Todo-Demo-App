@@ -11,9 +11,9 @@
 		AAEE6CB12A9058AA000DEEBA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CB02A9058AA000DEEBA /* ContentView.swift */; };
 		AAEE6CB32A9058AC000DEEBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEE6CB22A9058AC000DEEBA /* Assets.xcassets */; };
 		AAEE6CB62A9058AC000DEEBA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAEE6CB52A9058AC000DEEBA /* Preview Assets.xcassets */; };
-		AAEE6CC02A9058AD000DEEBA /* Todo_Demo_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CBF2A9058AD000DEEBA /* Todo_Demo_AppTests.swift */; };
-		AAEE6CCA2A9058AD000DEEBA /* Todo_Demo_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CC92A9058AD000DEEBA /* Todo_Demo_AppUITests.swift */; };
-		AAEE6CCC2A9058AD000DEEBA /* Todo_Demo_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CCB2A9058AD000DEEBA /* Todo_Demo_AppUITestsLaunchTests.swift */; };
+		AAEE6CD92A905969000DEEBA /* AddToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CD82A905969000DEEBA /* AddToDoView.swift */; };
+		AAEE6CDD2A9059A4000DEEBA /* ToDoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CDC2A9059A4000DEEBA /* ToDoDetailView.swift */; };
+		AAEE6CDF2A9059C0000DEEBA /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CDE2A9059C0000DEEBA /* ToDo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +40,10 @@
 		AAEE6CB22A9058AC000DEEBA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAEE6CB52A9058AC000DEEBA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AAEE6CBB2A9058AD000DEEBA /* Todo Demo AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Todo Demo AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAEE6CBF2A9058AD000DEEBA /* Todo_Demo_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_Demo_AppTests.swift; sourceTree = "<group>"; };
 		AAEE6CC52A9058AD000DEEBA /* Todo Demo AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Todo Demo AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AAEE6CC92A9058AD000DEEBA /* Todo_Demo_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_Demo_AppUITests.swift; sourceTree = "<group>"; };
-		AAEE6CCB2A9058AD000DEEBA /* Todo_Demo_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo_Demo_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AAEE6CD82A905969000DEEBA /* AddToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoView.swift; sourceTree = "<group>"; };
+		AAEE6CDC2A9059A4000DEEBA /* ToDoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailView.swift; sourceTree = "<group>"; };
+		AAEE6CDE2A9059C0000DEEBA /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,9 +74,9 @@
 		AAEE6CA22A9058AA000DEEBA = {
 			isa = PBXGroup;
 			children = (
+				AAEE6CE02A9059F0000DEEBA /* Model and ViewModel */,
+				AAEE6CE12A905A15000DEEBA /* Views */,
 				AAEE6CAD2A9058AA000DEEBA /* Todo Demo App */,
-				AAEE6CBE2A9058AD000DEEBA /* Todo Demo AppTests */,
-				AAEE6CC82A9058AD000DEEBA /* Todo Demo AppUITests */,
 				AAEE6CAC2A9058AA000DEEBA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,7 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				AAEE6CAE2A9058AA000DEEBA /* Todo_Demo_AppApp.swift */,
-				AAEE6CB02A9058AA000DEEBA /* ContentView.swift */,
 				AAEE6CB22A9058AC000DEEBA /* Assets.xcassets */,
 				AAEE6CB42A9058AC000DEEBA /* Preview Content */,
 			);
@@ -110,21 +109,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		AAEE6CBE2A9058AD000DEEBA /* Todo Demo AppTests */ = {
+		AAEE6CE02A9059F0000DEEBA /* Model and ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				AAEE6CBF2A9058AD000DEEBA /* Todo_Demo_AppTests.swift */,
+				AAEE6CDE2A9059C0000DEEBA /* ToDo.swift */,
 			);
-			path = "Todo Demo AppTests";
+			path = "Model and ViewModel";
 			sourceTree = "<group>";
 		};
-		AAEE6CC82A9058AD000DEEBA /* Todo Demo AppUITests */ = {
+		AAEE6CE12A905A15000DEEBA /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AAEE6CC92A9058AD000DEEBA /* Todo_Demo_AppUITests.swift */,
-				AAEE6CCB2A9058AD000DEEBA /* Todo_Demo_AppUITestsLaunchTests.swift */,
+				AAEE6CD82A905969000DEEBA /* AddToDoView.swift */,
+				AAEE6CB02A9058AA000DEEBA /* ContentView.swift */,
+				AAEE6CDC2A9059A4000DEEBA /* ToDoDetailView.swift */,
 			);
-			path = "Todo Demo AppUITests";
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +258,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAEE6CB12A9058AA000DEEBA /* ContentView.swift in Sources */,
+				AAEE6CDF2A9059C0000DEEBA /* ToDo.swift in Sources */,
 				AAEE6CAF2A9058AA000DEEBA /* Todo_Demo_AppApp.swift in Sources */,
+				AAEE6CD92A905969000DEEBA /* AddToDoView.swift in Sources */,
+				AAEE6CDD2A9059A4000DEEBA /* ToDoDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAEE6CC02A9058AD000DEEBA /* Todo_Demo_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AAEE6CCA2A9058AD000DEEBA /* Todo_Demo_AppUITests.swift in Sources */,
-				AAEE6CCC2A9058AD000DEEBA /* Todo_Demo_AppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
