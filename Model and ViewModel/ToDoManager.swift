@@ -2,7 +2,7 @@ import Foundation
 import SwiftUI
 
 class TodoManager: ObservableObject {
-    @Published var Todos: [Todo] = [] {
+    @Published var todos: [Todo] = [] {
         didSet {
             save()
         }
@@ -13,7 +13,7 @@ class TodoManager: ObservableObject {
     }
     
     func getArchiveURL() -> URL {
-        let plistName = "Todos.plist"
+        let plistName = "todos.plist"
         let documentsDirectory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         
         return documentsDirectory.appendingPathComponent(plistName)
@@ -22,7 +22,7 @@ class TodoManager: ObservableObject {
     func save() {
         let archiveURL = getArchiveURL()
         let propertyListEncoder = PropertyListEncoder()
-        let encodedTodos = try? propertyListEncoder.encode(Todos)
+        let encodedTodos = try? propertyListEncoder.encode(todos)
         try? encodedTodos?.write(to: archiveURL, options: .noFileProtection)
     }
     
@@ -31,8 +31,8 @@ class TodoManager: ObservableObject {
         let propertyListDecoder = PropertyListDecoder()
                 
         if let retrievedTodoData = try? Data(contentsOf: archiveURL),
-            let TodosDecoded = try? propertyListDecoder.decode([Todo].self, from: retrievedTodoData) {
-            Todos = TodosDecoded
+            let todosDecoded = try? propertyListDecoder.decode([Todo].self, from: retrievedTodoData) {
+            todos = todosDecoded
         }
     }
 }
