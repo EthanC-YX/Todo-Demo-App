@@ -14,6 +14,7 @@
 		AAEE6CD92A905969000DEEBA /* AddToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CD82A905969000DEEBA /* AddToDoView.swift */; };
 		AAEE6CDD2A9059A4000DEEBA /* ToDoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CDC2A9059A4000DEEBA /* ToDoDetailView.swift */; };
 		AAEE6CDF2A9059C0000DEEBA /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CDE2A9059C0000DEEBA /* ToDo.swift */; };
+		AAEE6CE52A905D27000DEEBA /* ToDoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE6CE42A905D27000DEEBA /* ToDoManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		AAEE6CD82A905969000DEEBA /* AddToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoView.swift; sourceTree = "<group>"; };
 		AAEE6CDC2A9059A4000DEEBA /* ToDoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoDetailView.swift; sourceTree = "<group>"; };
 		AAEE6CDE2A9059C0000DEEBA /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		AAEE6CE42A905D27000DEEBA /* ToDoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		AAEE6CE02A9059F0000DEEBA /* Model and ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AAEE6CE42A905D27000DEEBA /* ToDoManager.swift */,
 				AAEE6CDE2A9059C0000DEEBA /* ToDo.swift */,
 			);
 			path = "Model and ViewModel";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAEE6CB12A9058AA000DEEBA /* ContentView.swift in Sources */,
+				AAEE6CE52A905D27000DEEBA /* ToDoManager.swift in Sources */,
 				AAEE6CDF2A9059C0000DEEBA /* ToDo.swift in Sources */,
 				AAEE6CAF2A9058AA000DEEBA /* Todo_Demo_AppApp.swift in Sources */,
 				AAEE6CD92A905969000DEEBA /* AddToDoView.swift in Sources */,
